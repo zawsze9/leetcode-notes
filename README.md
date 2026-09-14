@@ -23,9 +23,11 @@
 | 73 | Set Matrix Zeroes | Medium | 思路正确但不能AC | 数组、矩阵、原地算法 | [链接](./solutions/73.md) |
 | 76 | Minimum Window Substring | Hard | 思路错误 | 哈希表、字符串、滑动窗口 | [链接](./solutions/76.md) |
 | 94 | Binary Tree Inorder Traversal | Easy | AC非最优 | 树、栈、递归 | [链接](./solutions/94.md) |
+| 98 | Validate Binary Search Tree | Medium | AC且最优（纠错后通过） | 树、深度优先搜索、二叉搜索树 | [链接](./solutions/98.md) |
 | 101 | Symmetric Tree | Easy | AC且最优（纠错后通过） | 树、递归 | [链接](./solutions/101.md) |
 | 102 | Binary Tree Level Order Traversal | Medium | AC且最优（纠错后通过） | 树、广度优先搜索、队列 | [链接](./solutions/102.md) |
 | 104 | Maximum Depth of Binary Tree | Easy | AC且最优 | 树、递归 | [链接](./solutions/104.md) |
+| 108 | Convert Sorted Array to Binary Search Tree | Easy | AC非最优（纠错后通过） | 树、数组、分治、二叉搜索树 | [链接](./solutions/108.md) |
 | 21 | Merge Two Sorted Lists | Easy | AC且最优 | 链表 | [链接](./solutions/21.md) |
 | 24 | Swap Nodes in Pairs | Medium | AC且最优 | 链表 | [链接](./solutions/24.md) |
 | 25 | Reverse Nodes in k-Group | Hard | 无思路 | 链表 | [链接](./solutions/25.md) |
@@ -37,7 +39,9 @@
 | 148 | Sort List | Medium | 无思路 | 链表、归并排序 | [链接](./solutions/148.md) |
 | 160 | Intersection of Two Linked Lists | Easy | AC非最优 | 链表、双指针 | [链接](./solutions/160.md) |
 | 189 | Rotate Array | Medium | AC非最优 | 数组、数学 | [链接](./solutions/189.md) |
+| 199 | Binary Tree Right Side View | Medium | AC非最优（一遍通过） | 树、广度优先搜索、深度优先搜索 | [链接](./solutions/199.md) |
 | 226 | Invert Binary Tree | Easy | AC且最优 | 树、递归 | [链接](./solutions/226.md) |
+| 230 | Kth Smallest Element in a BST | Medium | AC非最优（一遍通过） | 树、深度优先搜索、二叉搜索树 | [链接](./solutions/230.md) |
 | 238 | Product of Array Except Self | Medium | AC非最优 | 数组、前缀积 | [链接](./solutions/238.md) |
 | 239 | Sliding Window Maximum | Hard | 思路正确但不能AC | 队列、数组、滑动窗口 | [链接](./solutions/239.md) |
 | 240 | Search a 2D Matrix II | Medium | AC非最优 | 数组、矩阵、二分查找 | [链接](./solutions/240.md) |
@@ -78,10 +82,14 @@
 | # | 题目 | 难度 |
 |---|------|------|
 | 94 | Binary Tree Inorder Traversal | Easy |
+| 98 | Validate Binary Search Tree | Medium |
 | 101 | Symmetric Tree | Easy |
 | 102 | Binary Tree Level Order Traversal | Medium |
 | 104 | Maximum Depth of Binary Tree | Easy |
+| 108 | Convert Sorted Array to Binary Search Tree | Easy |
+| 199 | Binary Tree Right Side View | Medium |
 | 226 | Invert Binary Tree | Easy |
+| 230 | Kth Smallest Element in a BST | Medium |
 | 543 | Diameter of Binary Tree | Easy |
 
 ### 广度优先搜索
@@ -89,6 +97,29 @@
 | # | 题目 | 难度 |
 |---|------|------|
 | 102 | Binary Tree Level Order Traversal | Medium |
+| 199 | Binary Tree Right Side View | Medium |
+
+### 深度优先搜索
+
+| # | 题目 | 难度 |
+|---|------|------|
+| 98 | Validate Binary Search Tree | Medium |
+| 199 | Binary Tree Right Side View | Medium |
+| 230 | Kth Smallest Element in a BST | Medium |
+
+### 二叉搜索树
+
+| # | 题目 | 难度 |
+|---|------|------|
+| 98 | Validate Binary Search Tree | Medium |
+| 108 | Convert Sorted Array to Binary Search Tree | Easy |
+| 230 | Kth Smallest Element in a BST | Medium |
+
+### 分治
+
+| # | 题目 | 难度 |
+|---|------|------|
+| 108 | Convert Sorted Array to Binary Search Tree | Easy |
 
 ### 数组
 
@@ -103,6 +134,7 @@
 | 54 | Spiral Matrix | Medium |
 | 56 | Merge Intervals | Medium |
 | 73 | Set Matrix Zeroes | Medium |
+| 108 | Convert Sorted Array to Binary Search Tree | Easy |
 | 128 | Longest Consecutive Sequence | Medium |
 | 283 | Move Zeroes | Easy |
 | 239 | Sliding Window Maximum | Hard |
@@ -179,6 +211,28 @@
 |---|------|------|
 | 102 | Binary Tree Level Order Traversal | Medium |
 | 239 | Sliding Window Maximum | Hard |
+
+---
+
+## 母题-子题关系（复习索引）
+
+> 母题 = 提供核心套路的题；子题 = 母题套路 + 一个转折点。复习策略：**母题背模板，子题背转折点**。每整理一道新题时做一次母子题判断并更新本表。
+
+| 母题 | 母题套路 | 子题 | 转折点 |
+|------|---------|------|--------|
+| [1](./solutions/1.md) | 哈希补数查找 | [15](./solutions/15.md) | 补数对 → 排序+对撞双指针 |
+| | | [560](./solutions/560.md) | 补数思想迁移到前缀和差值 |
+| [3](./solutions/3.md) | 变长滑动窗口 | [76](./solutions/76.md) | 同框架求最小窗口（⚠️ 当前状态：思路错误，回炉重点） |
+| | | [438](./solutions/438.md) | 变体：定长窗口+频率数组 |
+| [21](./solutions/21.md) | 双指针拼合有序链表 | [148](./solutions/148.md) | 归并排序 = 分裂 + #21 合并 |
+| [94](./solutions/94.md) | 中序遍历骨架 | [98](./solutions/98.md) | 中序严格递增 ⇔ 合法 BST |
+| | | [230](./solutions/230.md) | 中序第 k 个 + 计数早停 |
+| [102](./solutions/102.md) | BFS+层快照 | [199](./solutions/199.md) | 只记每层最后一个 |
+| [104](./solutions/104.md) | 递归返回树高 | [543](./solutions/543.md) | 树高 + 全局最优更新 |
+| [141](./solutions/141.md) | 快慢指针判环 | [142](./solutions/142.md) | 判环 → 相遇点推环入口 |
+| [238](./solutions/238.md) | 前后缀分解 | [42](./solutions/42.md) | 同一骨架换统计量（前缀积 → 前缀最大值） |
+
+**缺口标记**：#206 反转链表（未刷）——#24、#25、#234 都在用其技术，反转三变体已沉淀在[链表常用算法笔记](./notes/链表常用算法.md)，建议补刷母题本体。
 
 ---
 
