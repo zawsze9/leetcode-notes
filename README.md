@@ -28,6 +28,7 @@
 | 102 | Binary Tree Level Order Traversal | Medium | AC且最优（纠错后通过） | 树、广度优先搜索、队列 | [链接](./solutions/102.md) |
 | 104 | Maximum Depth of Binary Tree | Easy | AC且最优 | 树、递归 | [链接](./solutions/104.md) |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy | AC非最优（纠错后通过） | 树、数组、分治、二叉搜索树 | [链接](./solutions/108.md) |
+| 114 | Flatten Binary Tree to Linked List | Medium | AC非最优（纠错后通过） | 树、深度优先搜索、链表 | [链接](./solutions/114.md) |
 | 21 | Merge Two Sorted Lists | Easy | AC且最优 | 链表 | [链接](./solutions/21.md) |
 | 24 | Swap Nodes in Pairs | Medium | AC且最优 | 链表 | [链接](./solutions/24.md) |
 | 25 | Reverse Nodes in k-Group | Hard | 无思路 | 链表 | [链接](./solutions/25.md) |
@@ -87,6 +88,7 @@
 | 102 | Binary Tree Level Order Traversal | Medium |
 | 104 | Maximum Depth of Binary Tree | Easy |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy |
+| 114 | Flatten Binary Tree to Linked List | Medium |
 | 199 | Binary Tree Right Side View | Medium |
 | 226 | Invert Binary Tree | Easy |
 | 230 | Kth Smallest Element in a BST | Medium |
@@ -104,6 +106,7 @@
 | # | 题目 | 难度 |
 |---|------|------|
 | 98 | Validate Binary Search Tree | Medium |
+| 114 | Flatten Binary Tree to Linked List | Medium |
 | 199 | Binary Tree Right Side View | Medium |
 | 230 | Kth Smallest Element in a BST | Medium |
 
@@ -158,6 +161,7 @@
 | 138 | Copy List with Random Pointer | Medium |
 | 148 | Sort List | Medium |
 | 234 | Palindrome Linked List | Easy |
+| 114 | Flatten Binary Tree to Linked List | Medium |
 
 ### 贪心
 
@@ -227,6 +231,7 @@
 | [21](./solutions/21.md) | 双指针拼合有序链表 | [148](./solutions/148.md) | 归并排序 = 分裂 + #21 合并 |
 | [94](./solutions/94.md) | 中序遍历骨架 | [98](./solutions/98.md) | 中序严格递增 ⇔ 合法 BST |
 | | | [230](./solutions/230.md) | 中序第 k 个 + 计数早停 |
+| | | [114](./solutions/114.md) | append 挪到递归前 = 前序；收集后重建右链 |
 | [102](./solutions/102.md) | BFS+层快照 | [199](./solutions/199.md) | 只记每层最后一个 |
 | [104](./solutions/104.md) | 递归返回树高 | [543](./solutions/543.md) | 树高 + 全局最优更新 |
 | [141](./solutions/141.md) | 快慢指针判环 | [142](./solutions/142.md) | 判环 → 相遇点推环入口 |
@@ -241,6 +246,7 @@
 | 专题 | 来源题目 | 链接 |
 |------|---------|------|
 | 递归 | #148 | [链接](./notes/递归.md) |
+| 收尾多做一步 | #102、#114 | [链接](./notes/收尾多做一步.md) |
 | 链表常用算法 | #2、#19、#21、#24、#25、#141、#142、#160、#234 | [链接](./notes/链表常用算法.md) |
 | 链表边界处理 | #2、#21、#142、#160、#234 | [链接](./notes/链表边界处理.md) |
 
