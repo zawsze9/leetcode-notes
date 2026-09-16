@@ -27,6 +27,7 @@
 | 101 | Symmetric Tree | Easy | AC且最优（纠错后通过） | 树、递归 | [链接](./solutions/101.md) |
 | 102 | Binary Tree Level Order Traversal | Medium | AC且最优（纠错后通过） | 树、广度优先搜索、队列 | [链接](./solutions/102.md) |
 | 104 | Maximum Depth of Binary Tree | Easy | AC且最优 | 树、递归 | [链接](./solutions/104.md) |
+| 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | AC非最优（纠错后通过） | 树、数组、分治、哈希表 | [链接](./solutions/105.md) |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy | AC非最优（纠错后通过） | 树、数组、分治、二叉搜索树 | [链接](./solutions/108.md) |
 | 114 | Flatten Binary Tree to Linked List | Medium | AC非最优（纠错后通过） | 树、深度优先搜索、链表 | [链接](./solutions/114.md) |
 | 21 | Merge Two Sorted Lists | Easy | AC且最优 | 链表 | [链接](./solutions/21.md) |
@@ -65,6 +66,7 @@
 | 41 | First Missing Positive | Hard |
 | 49 | Group Anagrams | Medium |
 | 76 | Minimum Window Substring | Hard |
+| 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium |
 | 128 | Longest Consecutive Sequence | Medium |
 | 438 | Find All Anagrams in a String | Medium |
 | 560 | Subarray Sum Equals K | Medium |
@@ -87,6 +89,7 @@
 | 101 | Symmetric Tree | Easy |
 | 102 | Binary Tree Level Order Traversal | Medium |
 | 104 | Maximum Depth of Binary Tree | Easy |
+| 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy |
 | 114 | Flatten Binary Tree to Linked List | Medium |
 | 199 | Binary Tree Right Side View | Medium |
@@ -122,6 +125,7 @@
 
 | # | 题目 | 难度 |
 |---|------|------|
+| 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy |
 
 ### 数组
@@ -138,6 +142,7 @@
 | 56 | Merge Intervals | Medium |
 | 73 | Set Matrix Zeroes | Medium |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy |
+| 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium |
 | 128 | Longest Consecutive Sequence | Medium |
 | 283 | Move Zeroes | Easy |
 | 239 | Sliding Window Maximum | Hard |
@@ -234,6 +239,7 @@
 | | | [114](./solutions/114.md) | append 挪到递归前 = 前序；收集后重建右链 |
 | [102](./solutions/102.md) | BFS+层快照 | [199](./solutions/199.md) | 只记每层最后一个 |
 | [104](./solutions/104.md) | 递归返回树高 | [543](./solutions/543.md) | 树高 + 全局最优更新 |
+| [108](./solutions/108.md) | 取中点分治建树 | [105](./solutions/105.md) | 根 = 前序[0]，切分点靠中序定位（#108 根 = 中点直接给出） |
 | [141](./solutions/141.md) | 快慢指针判环 | [142](./solutions/142.md) | 判环 → 相遇点推环入口 |
 | [238](./solutions/238.md) | 前后缀分解 | [42](./solutions/42.md) | 同一骨架换统计量（前缀积 → 前缀最大值） |
 
