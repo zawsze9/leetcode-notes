@@ -50,6 +50,7 @@
 | 234 | Palindrome Linked List | Easy | AC非最优 | 链表、双指针 | [链接](./solutions/234.md) |
 | 283 | Move Zeroes | Easy | AC且最优 | 双指针、数组 | [链接](./solutions/283.md) |
 | 438 | Find All Anagrams in a String | Medium | 思路正确但不能AC | 哈希表、字符串、滑动窗口 | [链接](./solutions/438.md) |
+| 437 | Path Sum III | Medium | AC非最优（纠错后通过） | 树、深度优先搜索、二叉搜索树 | [链接](./solutions/437.md) |
 | 543 | Diameter of Binary Tree | Easy | AC且最优（纠错后通过） | 树、递归 | [链接](./solutions/543.md) |
 | 560 | Subarray Sum Equals K | Medium | 思路正确但不能AC | 数组、哈希表、前缀和 | [链接](./solutions/560.md) |
 
@@ -95,6 +96,7 @@
 | 199 | Binary Tree Right Side View | Medium |
 | 226 | Invert Binary Tree | Easy |
 | 230 | Kth Smallest Element in a BST | Medium |
+| 437 | Path Sum III | Medium |
 | 543 | Diameter of Binary Tree | Easy |
 
 ### 广度优先搜索
@@ -112,6 +114,7 @@
 | 114 | Flatten Binary Tree to Linked List | Medium |
 | 199 | Binary Tree Right Side View | Medium |
 | 230 | Kth Smallest Element in a BST | Medium |
+| 437 | Path Sum III | Medium |
 
 ### 二叉搜索树
 
@@ -120,6 +123,7 @@
 | 98 | Validate Binary Search Tree | Medium |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy |
 | 230 | Kth Smallest Element in a BST | Medium |
+| 437 | Path Sum III | Medium |
 
 ### 分治
 
@@ -212,6 +216,7 @@
 | # | 题目 | 难度 |
 |---|------|------|
 | 238 | Product of Array Except Self | Medium |
+| 437 | Path Sum III | Medium |
 | 560 | Subarray Sum Equals K | Medium |
 
 ### 队列
@@ -241,6 +246,7 @@
 | [104](./solutions/104.md) | 递归返回树高 | [543](./solutions/543.md) | 树高 + 全局最优更新 |
 | [108](./solutions/108.md) | 取中点分治建树 | [105](./solutions/105.md) | 根 = 前序[0]，切分点靠中序定位（#108 根 = 中点直接给出） |
 | [141](./solutions/141.md) | 快慢指针判环 | [142](./solutions/142.md) | 判环 → 相遇点推环入口 |
+| [560](./solutions/560.md) | 前缀和+哈希 | [437](./solutions/437.md) | 数组→树：前缀沿分支算，回溯保证只见祖先 |
 | [238](./solutions/238.md) | 前后缀分解 | [42](./solutions/42.md) | 同一骨架换统计量（前缀积 → 前缀最大值） |
 
 **缺口标记**：#206 反转链表（未刷）——#24、#25、#234 都在用其技术，反转三变体已沉淀在[链表常用算法笔记](./notes/链表常用算法.md)，建议补刷母题本体。
