@@ -48,6 +48,7 @@
 | 239 | Sliding Window Maximum | Hard | 思路正确但不能AC | 队列、数组、滑动窗口 | [链接](./solutions/239.md) |
 | 240 | Search a 2D Matrix II | Medium | AC非最优 | 数组、矩阵、二分查找 | [链接](./solutions/240.md) |
 | 234 | Palindrome Linked List | Easy | AC非最优 | 链表、双指针 | [链接](./solutions/234.md) |
+| 236 | Lowest Common Ancestor of a Binary Tree | Medium | AC非最优（纠错后通过） | 树、深度优先搜索 | [链接](./solutions/236.md) |
 | 283 | Move Zeroes | Easy | AC且最优 | 双指针、数组 | [链接](./solutions/283.md) |
 | 438 | Find All Anagrams in a String | Medium | 思路正确但不能AC | 哈希表、字符串、滑动窗口 | [链接](./solutions/438.md) |
 | 437 | Path Sum III | Medium | AC非最优（纠错后通过） | 树、深度优先搜索、二叉搜索树 | [链接](./solutions/437.md) |
@@ -96,6 +97,7 @@
 | 199 | Binary Tree Right Side View | Medium |
 | 226 | Invert Binary Tree | Easy |
 | 230 | Kth Smallest Element in a BST | Medium |
+| 236 | Lowest Common Ancestor of a Binary Tree | Medium |
 | 437 | Path Sum III | Medium |
 | 543 | Diameter of Binary Tree | Easy |
 
@@ -113,6 +115,7 @@
 | 98 | Validate Binary Search Tree | Medium |
 | 114 | Flatten Binary Tree to Linked List | Medium |
 | 199 | Binary Tree Right Side View | Medium |
+| 236 | Lowest Common Ancestor of a Binary Tree | Medium |
 | 230 | Kth Smallest Element in a BST | Medium |
 | 437 | Path Sum III | Medium |
 
@@ -244,6 +247,7 @@
 | | | [114](./solutions/114.md) | append 挪到递归前 = 前序；收集后重建右链 |
 | [102](./solutions/102.md) | BFS+层快照 | [199](./solutions/199.md) | 只记每层最后一个 |
 | [104](./solutions/104.md) | 递归返回树高 | [543](./solutions/543.md) | 树高 + 全局最优更新 |
+| [543](./solutions/543.md) | 树形后序递归 | [236](./solutions/236.md) | 向孩子要"找到了谁"（身份聚合），会合点即 LCA |
 | [108](./solutions/108.md) | 取中点分治建树 | [105](./solutions/105.md) | 根 = 前序[0]，切分点靠中序定位（#108 根 = 中点直接给出） |
 | [141](./solutions/141.md) | 快慢指针判环 | [142](./solutions/142.md) | 判环 → 相遇点推环入口 |
 | [560](./solutions/560.md) | 前缀和+哈希 | [437](./solutions/437.md) | 数组→树：前缀沿分支算，回溯保证只见祖先 |
