@@ -11,6 +11,7 @@
 | 1 | Two Sum | Easy | AC且最优 | 数组、哈希表 | [链接](./solutions/1.md) |
 | 2 | Add Two Numbers | Medium | 思路正确但不能AC | 链表、模拟 | [链接](./solutions/2.md) |
 | 3 | Longest Substring Without Repeating Characters | Medium | 思路正确但不能AC | 哈希表、字符串、滑动窗口 | [链接](./solutions/3.md) |
+| 35 | Search Insert Position | Easy | AC且最优（纠错后通过） | 数组、二分查找 | [链接](./solutions/35.md) |
 | 11 | Container With Most Water | Medium | AC且最优 | 双指针、贪心 | [链接](./solutions/11.md) |
 | 15 | 3Sum | Medium | 思路正确但不能AC | 数组、双指针、排序 | [链接](./solutions/15.md) |
 | 41 | First Missing Positive | Hard | AC非最优 | 数组、哈希表 | [链接](./solutions/41.md) |
@@ -38,6 +39,7 @@
 | 141 | Linked List Cycle | Easy | AC非最优 | 链表、双指针 | [链接](./solutions/141.md) |
 | 138 | Copy List with Random Pointer | Medium | AC非最优 | 链表、哈希表 | [链接](./solutions/138.md) |
 | 142 | Linked List Cycle II | Medium | AC非最优 | 链表、双指针、哈希表 | [链接](./solutions/142.md) |
+| 146 | LRU Cache | Medium | AC且最优（纠错后通过） | 设计、哈希表、链表、双向链表 | [链接](./solutions/146.md) |
 | 148 | Sort List | Medium | 无思路 | 链表、归并排序 | [链接](./solutions/148.md) |
 | 160 | Intersection of Two Linked Lists | Easy | AC非最优 | 链表、双指针 | [链接](./solutions/160.md) |
 | 189 | Rotate Array | Medium | AC非最优 | 数组、数学 | [链接](./solutions/189.md) |
@@ -70,8 +72,15 @@
 | 76 | Minimum Window Substring | Hard |
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium |
 | 128 | Longest Consecutive Sequence | Medium |
+| 146 | LRU Cache | Medium |
 | 438 | Find All Anagrams in a String | Medium |
 | 560 | Subarray Sum Equals K | Medium |
+
+### 设计
+
+| # | 题目 | 难度 |
+|---|------|------|
+| 146 | LRU Cache | Medium |
 
 ### 双指针
 
@@ -135,11 +144,19 @@
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy |
 
+### 二分查找
+
+| # | 题目 | 难度 |
+|---|------|------|
+| 35 | Search Insert Position | Easy |
+| 240 | Search a 2D Matrix II | Medium |
+
 ### 数组
 
 | # | 题目 | 难度 |
 |---|------|------|
 | 1 | Two Sum | Easy |
+| 35 | Search Insert Position | Easy |
 | 15 | 3Sum | Medium |
 | 41 | First Missing Positive | Hard |
 | 42 | Trapping Rain Water | Hard |
@@ -171,9 +188,16 @@
 | 141 | Linked List Cycle | Easy |
 | 142 | Linked List Cycle II | Medium |
 | 138 | Copy List with Random Pointer | Medium |
+| 146 | LRU Cache | Medium |
 | 148 | Sort List | Medium |
 | 234 | Palindrome Linked List | Easy |
 | 114 | Flatten Binary Tree to Linked List | Medium |
+
+### 双向链表
+
+| # | 题目 | 难度 |
+|---|------|------|
+| 146 | LRU Cache | Medium |
 
 ### 贪心
 
