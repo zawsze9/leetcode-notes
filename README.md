@@ -22,6 +22,7 @@
 | 54 | Spiral Matrix | Medium | 思路正确但不能AC | 数组、矩阵、模拟 | [链接](./solutions/54.md) |
 | 56 | Merge Intervals | Medium | AC且最优 | 数组、排序 | [链接](./solutions/56.md) |
 | 73 | Set Matrix Zeroes | Medium | 思路正确但不能AC | 数组、矩阵、原地算法 | [链接](./solutions/73.md) |
+| 74 | Search a 2D Matrix | Medium | AC且最优（纠错后通过） | 数组、矩阵、二分查找 | [链接](./solutions/74.md) |
 | 76 | Minimum Window Substring | Hard | 思路错误 | 哈希表、字符串、滑动窗口 | [链接](./solutions/76.md) |
 | 94 | Binary Tree Inorder Traversal | Easy | AC非最优 | 树、栈、递归 | [链接](./solutions/94.md) |
 | 98 | Validate Binary Search Tree | Medium | AC且最优（纠错后通过） | 树、深度优先搜索、二叉搜索树 | [链接](./solutions/98.md) |
@@ -149,6 +150,7 @@
 | # | 题目 | 难度 |
 |---|------|------|
 | 35 | Search Insert Position | Easy |
+| 74 | Search a 2D Matrix | Medium |
 | 240 | Search a 2D Matrix II | Medium |
 
 ### 数组
@@ -164,6 +166,7 @@
 | 53 | Maximum Subarray | Medium |
 | 54 | Spiral Matrix | Medium |
 | 56 | Merge Intervals | Medium |
+| 74 | Search a 2D Matrix | Medium |
 | 73 | Set Matrix Zeroes | Medium |
 | 108 | Convert Sorted Array to Binary Search Tree | Easy |
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | Medium |
@@ -174,6 +177,16 @@
 | 238 | Product of Array Except Self | Medium |
 | 240 | Search a 2D Matrix II | Medium |
 | 560 | Subarray Sum Equals K | Medium |
+
+### 矩阵
+
+| # | 题目 | 难度 |
+|---|------|------|
+| 48 | Rotate Image | Medium |
+| 54 | Spiral Matrix | Medium |
+| 73 | Set Matrix Zeroes | Medium |
+| 74 | Search a 2D Matrix | Medium |
+| 240 | Search a 2D Matrix II | Medium |
 
 ### 链表
 
@@ -276,6 +289,7 @@
 | [141](./solutions/141.md) | 快慢指针判环 | [142](./solutions/142.md) | 判环 → 相遇点推环入口 |
 | [560](./solutions/560.md) | 前缀和+哈希 | [437](./solutions/437.md) | 数组→树：前缀沿分支算，回溯保证只见祖先 |
 | [238](./solutions/238.md) | 前后缀分解 | [42](./solutions/42.md) | 同一骨架换统计量（前缀积 → 前缀最大值） |
+| [35](./solutions/35.md) | 有序数组 lo/hi 二分（插入点 = 循环止时的 lo） | [74](./solutions/74.md) | 二维拍平：取值换坐标 `(idx//列数, idx%列数)`，除数是列数 |
 
 **缺口标记**：#206 反转链表（未刷）——#24、#25、#234 都在用其技术，反转三变体已沉淀在[链表常用算法笔记](./notes/链表常用算法.md)，建议补刷母题本体。
 
