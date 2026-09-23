@@ -11,6 +11,7 @@
 | 1 | Two Sum | Easy | AC且最优 | 数组、哈希表 | [链接](./solutions/1.md) |
 | 2 | Add Two Numbers | Medium | 思路正确但不能AC | 链表、模拟 | [链接](./solutions/2.md) |
 | 3 | Longest Substring Without Repeating Characters | Medium | 思路正确但不能AC | 哈希表、字符串、滑动窗口 | [链接](./solutions/3.md) |
+| 34 | Find First and Last Position of Element in Sorted Array | Medium | AC且最优（纠错后通过） | 数组、二分查找 | [链接](./solutions/34.md) |
 | 35 | Search Insert Position | Easy | AC且最优（纠错后通过） | 数组、二分查找 | [链接](./solutions/35.md) |
 | 11 | Container With Most Water | Medium | AC且最优 | 双指针、贪心 | [链接](./solutions/11.md) |
 | 15 | 3Sum | Medium | 思路正确但不能AC | 数组、双指针、排序 | [链接](./solutions/15.md) |
@@ -149,6 +150,7 @@
 
 | # | 题目 | 难度 |
 |---|------|------|
+| 34 | Find First and Last Position of Element in Sorted Array | Medium |
 | 35 | Search Insert Position | Easy |
 | 74 | Search a 2D Matrix | Medium |
 | 240 | Search a 2D Matrix II | Medium |
@@ -158,6 +160,7 @@
 | # | 题目 | 难度 |
 |---|------|------|
 | 1 | Two Sum | Easy |
+| 34 | Find First and Last Position of Element in Sorted Array | Medium |
 | 35 | Search Insert Position | Easy |
 | 15 | 3Sum | Medium |
 | 41 | First Missing Positive | Hard |
@@ -290,6 +293,7 @@
 | [560](./solutions/560.md) | 前缀和+哈希 | [437](./solutions/437.md) | 数组→树：前缀沿分支算，回溯保证只见祖先 |
 | [238](./solutions/238.md) | 前后缀分解 | [42](./solutions/42.md) | 同一骨架换统计量（前缀积 → 前缀最大值） |
 | [35](./solutions/35.md) | 有序数组 lo/hi 二分（插入点 = 循环止时的 lo） | [74](./solutions/74.md) | 二维拍平：取值换坐标 `(idx//列数, idx%列数)`，除数是列数 |
+| | | [34](./solutions/34.md) | 命中不返回：左搜等值划右（hi=mid-1）、右搜划左（lo=mid+1），各收敛一端 |
 
 **缺口标记**：#206 反转链表（未刷）——#24、#25、#234 都在用其技术，反转三变体已沉淀在[链表常用算法笔记](./notes/链表常用算法.md)，建议补刷母题本体。
 
